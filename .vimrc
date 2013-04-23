@@ -30,7 +30,8 @@ let s:show_hidden_files=1
 set shortmess+=I
 set number
 set tabstop=2
-set autoindent
+"set autoindent
+set noautoindent
 set expandtab
 "set fileencodings=iso-2022-jp,sjis,utf-8
 "set encoding=utf-8
@@ -45,6 +46,8 @@ set ruler
 set laststatus=2
 "set visualbell
 "set mouse=a
+set shiftwidth=2
+set expandtab
 syntax on
 
 " display 
