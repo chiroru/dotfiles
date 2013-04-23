@@ -1,0 +1,17 @@
+# Escape Key si C-t, literal is a.
+escape ^Ta
+
+# scrollback buffer.
+defscrollback 1000
+
+# don't show startup message.
+startup_message off
+
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -1' 'command -c resize'
+
+# window caption
+caption always "%{= wk} %-w%?%F%{=b kr}%:%{= kW}%? %n %t %{-}%+w"
+
+defencoding utf-8
