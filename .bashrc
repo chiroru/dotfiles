@@ -62,6 +62,10 @@ if [ -f "${HOME}/dotfiles/.bash_aliases" ]; then
   source "${HOME}/dotfiles/.bash_aliases"
 fi
 
+if [ -f ${HOME}/dotfiles/.bashrc_local ]; then
+  source ${HOME}/dotfiles/.bashrc_local;
+fi
+
 # Umask
 #
 # /etc/profile sets 022, removing write perms to group + others.
@@ -155,7 +159,3 @@ fi
 case $- in
   *i*) [[ -f /etc/bash_completion ]] && . /etc/bash_completion ;;
 esac
-
-if [ -f ${HOME}/.bashrc_local ]; then
-  source ${HOME}/.bashrc_local;
-fi
