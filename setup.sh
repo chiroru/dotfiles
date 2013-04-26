@@ -5,36 +5,36 @@
 #
 # ======================================================================
 
-if [ ! -d ~/dotfiles/vimfiles/vundle.git ]
+if [ ! -d ${HOME}/dotfiles/vimfiles/vundle.git ]
 then
     CUR_DIR=`pwd`
-    cd ~/dotfiles
-    git submodule add http://github.com/gmarik/vundle.git ~/dotfiles/vimfiles/vundle.git
+    cd ${HOME}/dotfiles
+    git submodule add http://github.com/gmarik/vundle.git ${HOME}/dotfiles/vimfiles/vundle.git
     cd ${CUR_DIR}
 fi
 
-if [ ! -f ~/.screenrc ]
+if [ ! -f ${HOME}/.screenrc ]
 then
-    /usr/bin/ln -s ~/dotfiles/.screenrc ~/.screenrc
+    /usr/bin/ln -s ${HOME}/dotfiles/.screenrc ${HOME}/.screenrc
 fi
 
-if [ ! -f ~/.vimrc ]
+if [ ! -f ${HOME}/.vimrc ]
 then
-    /usr/bin/ln -s ~/dotfiles/.vimrc ~/.vimrc
+    /usr/bin/ln -s ${HOME}/dotfiles/.vimrc ${HOME}/.vimrc
 fi
 
-if [ ! -f ~/.bashrc ]
+if [ ! -f ${HOME}/.bashrc ]
 then
-    /usr/bin/ln -s ~/dotfiles/.bashrc ~/.bashrc
+    /usr/bin/ln -s ${HOME}/dotfiles/.bashrc ${HOME}/.bashrc
 fi
 
-if [ ! -d ~/.vim ]
+if [ ! -d ${HOME}/.vim ]
 then
-    /usr/bin/ln -s ~/dotfiles/vimfiles ~/.vim
+    /usr/bin/ln -s ${HOME}/dotfiles/vimfiles ${HOME}/.vim
 fi
 
-if [ ! -d ~/dotfiles/vimfiles/bundle ]
+if [ ! -d ${HOME}/dotfiles/vimfiles/bundle ]
 then
-    /usr/bin/mkdir ~/dotfiles/vimfiles/bundle
-    /usr/bin/ln -s ~/dotfiles/vimfiles/vundle.git ~/dotfiles/vimfiles/bundle/vundle
+    /usr/bin/mkdir ${HOME}/dotfiles/vimfiles/bundle
+    /usr/bin/ln -s ${HOME}/dotfiles/vimfiles/vundle.git ${HOME}/dotfiles/vimfiles/bundle/vundle
 fi

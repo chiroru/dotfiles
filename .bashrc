@@ -156,3 +156,6 @@ case $- in
   *i*) [[ -f /etc/bash_completion ]] && . /etc/bash_completion ;;
 esac
 
+if [ -f ${HOME}/.bashrc_local ]; then
+  source ${HOME}/.bashrc_local;
+fi
