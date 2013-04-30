@@ -1,5 +1,7 @@
-export http_proxy="http://${proxy_user}:${proxy_password}@${proxy_host}:${proxy_port}"
-export https_proxy="https://${proxy_user}:${proxy_password}@${proxy_host}:${proxy_port}"
+if [ ! -z ${proxy_user} ] && [ ! -z ${proxy_password} ] && [ ! -z ${proxy_host} ] && [ ! -z ${proxy_port} ]; then
+  export http_proxy="http://${proxy_user}:${proxy_password}@${proxy_host}:${proxy_port}"
+  export https_proxy="https://${proxy_user}:${proxy_password}@${proxy_host}:${proxy_port}"
+fi
 
 alias cmd='cygstart cmd'
 alias google='cygstart https://www.google.co.jp/'
