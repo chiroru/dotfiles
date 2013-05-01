@@ -32,3 +32,7 @@ if [ ! -d ${HOME}/dotfiles/vimfiles/bundle ]; then
     /usr/bin/mkdir ${HOME}/dotfiles/vimfiles/bundle
     /usr/bin/ln -s ${HOME}/dotfiles/vimfiles/vundle.git ${HOME}/dotfiles/vimfiles/bundle/vundle
 fi
+
+if [ ! -d ${HOME}/dotfiles/vimfiles/bundle ]; then
+    git clone http://github.com/mattn/zencoding-vim.git ${HOME}/dotfiles/vimfiles/bundle/zenconfig-vim
+fi

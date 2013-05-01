@@ -11,6 +11,7 @@ Bundle 'AutoComplPop'
 Bundle 'Color-Sampler-Pack'
 Bundle 'ref.vim'
 Bundle 'Fugitive.vim'
+Bundle 'zencoding-vim.git'
 "Bundle 'unite.vim'
 filetype plugin indent on
 
