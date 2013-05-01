@@ -3,7 +3,7 @@ filetype off
 set rtp+=~/dotfiles/vimfiles/vundle.git/
 call vundle#rc()
 Bundle 'gmarik/vundle'
-Bundle 'opsplorer'
+"Bundle 'opsplorer'
 Bundle 'fugitive.vim'
 Bundle 'gitv'
 Bundle 'open-browser.vim'
@@ -11,7 +11,7 @@ Bundle 'AutoComplPop'
 Bundle 'Color-Sampler-Pack'
 Bundle 'ref.vim'
 Bundle 'Fugitive.vim'
-Bundle 'zencoding-vim.git'
+Bundle 'ZenCoding.vim'
 "Bundle 'unite.vim'
 filetype plugin indent on
 

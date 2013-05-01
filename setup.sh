@@ -8,7 +8,7 @@
 if [ ! -f ${HOME}/.bashrc ]; then
     /usr/bin/ln -s ${HOME}/dotfiles/.bashrc ${HOME}/.bashrc
 fi
-;J
+
 if [ ! -f ${HOME}/.screenrc ]; then
     /usr/bin/ln -s ${HOME}/dotfiles/.screenrc ${HOME}/.screenrc
 fi
@@ -33,6 +33,10 @@ if [ ! -d ${HOME}/dotfiles/vimfiles/bundle ]; then
     /usr/bin/ln -s ${HOME}/dotfiles/vimfiles/vundle.git ${HOME}/dotfiles/vimfiles/bundle/vundle
 fi
 
-if [ ! -d ${HOME}/dotfiles/vimfiles/bundle ]; then
-    git clone http://github.com/mattn/zencoding-vim.git ${HOME}/dotfiles/vimfiles/bundle/zenconfig-vim
+#if [ ! -d ${HOME}/dotfiles/vimfiles/bundle/zenconfig-vim.git ]; then
+#    git clone http://github.com/mattn/zencoding-vim.git ${HOME}/dotfiles/vimfiles/bundle/zenconfig-vim.git
+#fi
+
+if [ ! -f ${HOME}/.environment.conf ]; then
+  cp ${HOME}/dotfiles/skel/.environment.conf ${HOME}/.environment.conf
 fi
