@@ -12,6 +12,7 @@ Bundle 'Color-Sampler-Pack'
 Bundle 'ref.vim'
 Bundle 'Fugitive.vim'
 Bundle 'ZenCoding.vim'
+Bundle 'Align'
 "Bundle 'unite.vim'
 filetype plugin indent on
 
