@@ -29,6 +29,20 @@ filetype plugin indent on
 " --------------------------------------------------
 let s:show_hidden_files=1
 
+" ZenCoding
+" --------------------------------------------------
+let g:user_zen_settings = {
+  \ 'lang':'ja',
+  \ 'indentation' :" ",
+  \}
+"  \ 'html': {
+"  \   'snippets': {
+"  \     'html:4t': "aaa\n"
+"  \   },
+"  \ }
+"  \}
+let g:user_zen_expandabbr_key = '<c-e>'
+
 set shortmess+=I
 set number
 set tabstop=2
