@@ -75,6 +75,8 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
+" StatusLine
+" --------------------------------------------------
 hi StatusLine gui=None guifg=White guibg=DarkGray cterm=None ctermfg=White ctermbg=DarkGray
 au InsertEnter *  hi StatusLine gui=None guifg=DarkBlue guibg=Gray cterm=None ctermfg=Blue ctermbg=Gray
 au InsertLeave * hi StatusLine gui=None guifg=White guibg=DarkGray cterm=None ctermfg=White ctermbg=DarkGray
