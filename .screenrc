@@ -15,3 +15,5 @@ bind -c resize k eval 'resize -1' 'command -c resize'
 caption always "%{= wk} %-w%?%F%{=b kr}%:%{= kW}%? %n %t %{-}%+w"
 
 defencoding utf-8
+
+altscreen on
