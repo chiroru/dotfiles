@@ -1,5 +1,3 @@
-config.*
-.bashrc_local
 .gitmodules
 /vimfiles/bundle/
 /vimfiles/vundle.git/
