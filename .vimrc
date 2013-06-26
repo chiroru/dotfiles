@@ -3,7 +3,8 @@ filetype off
 set rtp+=~/dotfiles/vimfiles/vundle.git/
 call vundle#rc()
 Bundle 'gmarik/vundle'
-"Bundle 'opsplorer'
+Bundle 'https://github.com/Shougo/unite.vim.git'
+Bundle 'https://github.com/Shougo/vimfiler.git'
 Bundle 'fugitive.vim'
 Bundle 'gitv'
 Bundle 'open-browser.vim'
@@ -64,6 +65,8 @@ set laststatus=2
 "set mouse=a
 set shiftwidth=2
 set expandtab
+set modifiable
+set write
 syntax on
 
 " display 
