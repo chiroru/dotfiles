@@ -16,7 +16,7 @@ dotfiles
 
 1. cloneの実行 
 
-    $ gem clone https://github.com/chiroru/dotfiles.git
+    $ git clone https://github.com/chiroru/dotfiles.git
 
 2. setup.shの実行
 
