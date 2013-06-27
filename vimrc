@@ -51,9 +51,9 @@ set tabstop=2
 set noautoindent
 set expandtab
 "set fileencodings=iso-2022-jp,sjis,utf-8
-"set encoding=utf-8
-"set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-"set fileformats=unix,dos,mac
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 set showcmd
 set hlsearch
 "set ignorecase
@@ -71,7 +71,7 @@ syntax on
 
 " display 
 " --------------------------------------------------
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [ENC=%{&enc}]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
