@@ -17,7 +17,7 @@ Bundle 'Align'
 "Bundle 'unite.vim'
 filetype plugin indent on
 
-" Brief help
+" Vundler Plugin ---------------------------------------------- [Brief help]
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles
 " :BundleSearch(!) foo - search(or refresh cache first) for foo
@@ -25,13 +25,9 @@ filetype plugin indent on
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+" --------------------------------------------------------------------------
 
-" Opsplorer
-" --------------------------------------------------
-let s:show_hidden_files=1
-
-" ZenCoding
-" --------------------------------------------------
+" ZenCoding Plugin ---------------------------------------------- [Settings]
 let g:user_zen_settings = {
   \ 'lang':'ja',
   \ 'indentation' :" ",
@@ -43,34 +39,33 @@ let g:user_zen_settings = {
 "  \ }
 "  \}
 let g:user_zen_expandabbr_key = '<c-e>'
+" --------------------------------------------------------------------------
 
 set shortmess+=I
 set number
 set tabstop=2
-"set autoindent
 set noautoindent
 set expandtab
-"set fileencodings=iso-2022-jp,sjis,utf-8
-set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-set fileformats=unix,dos,mac
 set showcmd
 set hlsearch
-"set ignorecase
-"set smartcase
-"set backspace=indent,eol,start
 set ruler
 set laststatus=2
-"set visualbell
-"set mouse=a
 set shiftwidth=2
 set expandtab
 set modifiable
 set write
+set nobackup
 syntax on
+"set autoindent
+"set visualbell
+"set mouse=a
+"set ignorecase
+"set smartcase
+"set backspace=indent,eol,start
+"set encoding=utf-8
+"set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+"set fileformats=unix,dos,mac
 
-" display 
-" --------------------------------------------------
 set statusline=%F%m%r%h%w\ [ENC=%{&enc}]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 
@@ -78,8 +73,6 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
-" StatusLine
-" --------------------------------------------------
 hi StatusLine gui=None guifg=White guibg=DarkGray cterm=None ctermfg=White ctermbg=DarkGray
 au InsertEnter *  hi StatusLine gui=None guifg=DarkBlue guibg=Gray cterm=None ctermfg=Blue ctermbg=Gray
 au InsertLeave * hi StatusLine gui=None guifg=White guibg=DarkGray cterm=None ctermfg=White ctermbg=DarkGray
