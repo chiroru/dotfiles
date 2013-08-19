@@ -18,7 +18,14 @@ dotfiles
 
     $ git clone https://github.com/chiroru/dotfiles.git
 
-2. setup.shの実行
+2. プロキシ環境の場合はプロキシの設定を実行
+
+Windows環境の場合
+
+ set HTTPS_PROXY=http://ユーザID:パスワード@プロキシサーバ:ポート
+ set HTTP_PROXY=http://ユーザID:パスワード@プロキシサーバ:ポート
+
+3. setup.shの実行
 
     $ cd dotfiles
 

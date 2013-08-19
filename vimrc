@@ -72,7 +72,7 @@ let g:indent_guides_enable_on_vim_startup=1
 "autocmd VimEnter,Colorscheme * : highlight IndentGuidesEven ctermbg=black
 
 set cursorline
-autocmd VimEnter,ColorScheme * : highlight CursorLine cterm=underline ctermbg=234
+"autocmd VimEnter,ColorScheme * : highlight CursorLine cterm=underline ctermbg=234
 
 
 set statusline=%F%m%r%h%w\ [ENC=%{&enc}]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
